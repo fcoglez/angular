@@ -5,7 +5,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Grafic1Component } from './pages/grafic1/grafic1.component';
-import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { PagesComponent } from './pages/pages.component';
 
 
@@ -42,13 +42,13 @@ const routes: Routes = [
   declarations: [
     
   ],
+  exports: [
+    RouterModule
+  ],
   imports: [
    //En Angular configura las rutas principales de la aplicación. Se utiliza cuando defines el enrutamiento a nivel global, es decir, 
    //cuando estableces las rutas base de la aplicación. (ESTAN SON LAS RUTAS PRINCIPALES DE LA APLICACIÓN)
    RouterModule.forRoot(routes)
-  ], 
-  exports: [
-    RouterModule
   ]
 })
 export class AppRoutingModule { }
