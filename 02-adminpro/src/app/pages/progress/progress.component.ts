@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 })
 export class ProgressComponent {
 
-  progress: number = 50;
+  progress1: number = 15;
+  progress2: number = 5;
 
-  get getPercentage(){
-    return `${ this.progress }%`;
+  get getPercentage1(){
+    return `${this.progress1}%`
   }
 
-  changeValue(value: number){
-
-    this.progress += value;
-
+  get getPercentage2(){
+    return `${this.progress2}%`
   }
+
 }

@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafic1Component } from './grafic1/grafic1.component';
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
+import { ComponentsModule } from "../components/components.module";
 
 
 
@@ -28,8 +29,10 @@ import { ProgressComponent } from './progress/progress.component';
   imports: [
     CommonModule,
     FormsModule,
+    AppRoutingModule,
+    CommonModule,
     SharedModule,
-    AppRoutingModule
-  ]
+    ComponentsModule
+]
 })
 export class PagesModule { }
